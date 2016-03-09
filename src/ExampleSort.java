@@ -91,7 +91,7 @@ public class ExampleSort {
 		
 	}
 	
-	
+	//πÈ≤¢≈≈–Ú
 	public static void Merge(Comparable[] a, int lo, int mid, int hi){
 		
 		int i = lo, j = mid + 1;
