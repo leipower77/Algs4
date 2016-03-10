@@ -7,10 +7,10 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 public class BinarySearch {
-	public static int rank(int key, int[] a) { // Êý×é±ØÐëÊÇÓÐÐòµÄ
+	public static int rank(int key, int[] a) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		int lo = 0;
 		int hi = a.length - 1;
-		while (lo <= hi) { // ±»²éÕÒµÄ¼üÒªÃ´²»´æÔÚ£¬ÒªÃ´±ØÈ»´æÔÚÓÚa[lo..hi]Ö®ÖÐ
+		while (lo <= hi) { // ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÄ¼ï¿½ÒªÃ´ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ÒªÃ´ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½a[lo..hi]Ö®ï¿½ï¿½
 			int mid = lo + (hi - lo) / 2;
 			if (key < a[mid])
 				hi = mid - 1;
@@ -25,12 +25,10 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int[] whitelist = In.readInts(args[0]);
 		Arrays.sort(whitelist);
-		while (!StdIn.isEmpty()) { // ¶ÁÈ¡¼üÖµ£¬Èç¹û²»´æÔÚÓÚ°×Ãûµ¥ÖÐÔò½«Æä´òÓ¡
+		while (!StdIn.isEmpty()) { // ï¿½ï¿½È¡ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡
 			int key = StdIn.readInt();
 			if (rank(key, whitelist) < 0)
 				StdOut.println(key);
 		}
 	}
 }
-
-
