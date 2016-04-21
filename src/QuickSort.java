@@ -88,15 +88,15 @@ public class QuickSort {
 		System.out.println();
 		show(a);
 		
-		for(int i= 0; i<a.length; i++){
-			a[i] = r.nextInt(20);
-		}
-		
-		show(a);
-		sort3(a);
-		System.out.println();
-		show(a);
-		
+//		for(int i= 0; i<a.length; i++){
+//			a[i] = r.nextInt(20);
+//		}
+//		
+//		show(a);
+//		sort3(a);
+//		System.out.println();
+//		show(a);
+//		
 		
 	}
 
